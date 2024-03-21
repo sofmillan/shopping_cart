@@ -7,9 +7,9 @@ on:
     types: [opened, synchronize, reopened]
 
 env:
-  DATABASE_URL: {{ secrets.DATABASE_URL }}
-  DATABASE_NAME: {{ secrets.DATABASE_NAME }}
-  DATABASE_PASSWORD: {{ secrets.DATABASE_PASSWORD }}
+  DATABASE_URL: ${{ secrets.DATABASE_URL }}
+  DATABASE_NAME: ${{ secrets.DATABASE_NAME }}
+  DATABASE_PASSWORD: ${{ secrets.DATABASE_PASSWORD }}
 
 jobs:
   build:
